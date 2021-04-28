@@ -220,14 +220,14 @@ h6 {
 /* END HEADER */
 
 /* START HERO SECTION */
-#hero {
+.hero {
   width: 100%;
   height: 100vh;
   background: url("../img/bang-ganteng.jpg") center;
   background-size: cover;
 }
 
-#hero::before {
+.hero::before {
   content: "";
   background-color: rgba(5, 13, 24, 0.3);
   position: absolute;
@@ -238,13 +238,13 @@ h6 {
   z-index: 1;
 }
 
-#hero .hero-container {
+.hero .hero-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
 }
 
-#hero h1 {
+.hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -252,11 +252,46 @@ h6 {
   color: #fff;
 }
 
-#hero p {
+.hero p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 34px;
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero h1 {
+    font-size: 52px;
+  }
+  .hero p {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .hero p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+}
 /* END HERO SECTION */
