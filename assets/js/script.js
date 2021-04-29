@@ -6,7 +6,8 @@ menuToggle.addEventListener("click", function () {
   header.classList.toggle("slide");
 });
 
-// GSAP
+// START GSAP
+// Hero Section
 const words = ["Front End Developer", "UI/UX Designer"];
 
 let masterTL = gsap.timeline({ repeat: -1 });
@@ -16,3 +17,8 @@ words.forEach((word) => {
   tl.to(".text-plugin", { duration: 1, text: word });
   masterTL.add(tl);
 });
+// END GSAP
+
+// START AOS JS
+AOS.init();
+// END AOS JS
