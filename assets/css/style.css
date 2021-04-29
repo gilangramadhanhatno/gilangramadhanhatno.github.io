@@ -244,6 +244,11 @@ h6 {
   min-width: 300px;
 }
 
+.hero h4 {
+  color: #fff;
+  font-weight: 200;
+}
+
 .hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
@@ -300,3 +305,59 @@ h6 {
   }
 }
 /* END HERO SECTION */
+
+/* START MAIN */
+#main {
+  margin-left: 300px;
+}
+@media screen and (max-width: 992px) {
+  #main {
+    margin-left: 0;
+  }
+}
+/* Section General */
+section {
+  padding: 50px 0;
+  height: 100vh;
+}
+.section-title {
+  padding-bottom: 30px;
+  margin: 0 50px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  color: #040b14;
+}
+.section-title p {
+  font-family: "Poppins", sans-serif;
+}
+/* After */
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: #149ddd;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* START ABOUT SECTION */
+.about {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0 20%;
+}
+@media screen and (max-width: 576px) {
+  .about {
+    margin: 0 10%;
+  }
+}
+/* END ABOUT SECTION */
+/* END MAIN */
