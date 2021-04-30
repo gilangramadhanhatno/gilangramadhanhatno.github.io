@@ -318,7 +318,6 @@ h6 {
 /* Section General */
 section {
   padding: 50px 0;
-  height: 100vh;
 }
 .section-title {
   padding-bottom: 30px;
@@ -350,14 +349,87 @@ section {
 /* START ABOUT SECTION */
 .about {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  margin: 0 20%;
+  margin: 70px 20%;
+}
+@media screen and (max-width: 992px) {
+  .about p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
   .about {
     margin: 0 10%;
   }
+  .about p {
+    font-size: 11px;
+  }
 }
+
 /* END ABOUT SECTION */
+
+/* START SKILLS SECTION */
+.skills .focus {
+  transition: transform 0.3s;
+}
+
+.skills .focus:hover {
+  transform: scale(1.05);
+}
+
+.skills .card {
+  width: 80%;
+}
+
+.skills .card-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.skills .img-card {
+  width: 50px;
+}
+
+.skills .card-text {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #231d5af8;
+}
+
+.skills .card-text:hover {
+  color: #231d5af8;
+}
+
+.skills .row {
+  margin: 0 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills .card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .skills .card {
+    width: 170%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills .card-title {
+    font-size: 28px;
+  }
+
+  .skills .img-card {
+    width: 40px;
+  }
+
+  .skills .card-text {
+    font-size: 14px;
+  }
+}
+/* END SKILLS SECTION */
 /* END MAIN */
