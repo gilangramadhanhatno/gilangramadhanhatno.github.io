@@ -164,7 +164,7 @@ h6 {
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: #fff;
+  background-color: #149ddd;
   transform: rotate(45deg) translate(-1px, -1px);
 }
 
@@ -174,7 +174,7 @@ h6 {
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: #fff;
+  background-color: #149ddd;
   transform: rotate(-45deg) translate(-1px, 0);
 }
 /* End Menu Toggle */
@@ -225,17 +225,7 @@ h6 {
   height: 100vh;
   background: url("../img/bang-ganteng.jpg") center;
   background-size: cover;
-}
-
-.hero::before {
-  content: "";
-  background-color: rgba(5, 13, 24, 0.3);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .hero .hero-container {
@@ -296,6 +286,9 @@ h6 {
   }
 }
 @media screen and (max-width: 576px) {
+  .hero {
+    width: 100%;
+  }
   .hero h1 {
     font-size: 28px;
     line-height: 28px;
@@ -313,6 +306,12 @@ h6 {
 @media screen and (max-width: 992px) {
   #main {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #main {
+    overflow-x: hidden;
+    /* margin-left: 0; */
   }
 }
 /* Section General */
@@ -363,6 +362,7 @@ section {
 }
 @media screen and (max-width: 576px) {
   .about {
+    overflow-x: hidden;
     margin: 0 10%;
   }
   .about p {
