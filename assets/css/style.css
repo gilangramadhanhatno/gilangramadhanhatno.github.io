@@ -311,7 +311,6 @@ h6 {
 @media screen and (max-width: 576px) {
   #main {
     overflow-x: hidden;
-    /* margin-left: 0; */
   }
 }
 /* Section General */
