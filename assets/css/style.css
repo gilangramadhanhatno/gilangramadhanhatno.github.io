@@ -347,7 +347,7 @@ section {
 /* START ABOUT SECTION */
 .about {
   overflow: hidden;
-  margin: 70px 20%;
+  margin: 0 20%;
 }
 @media screen and (max-width: 992px) {
   .about p {
@@ -450,4 +450,22 @@ section {
   transform: scale(1.2);
 }
 /* END PORTFOLIO SECTION */
+
+/* START CONTACT SECTION */
+.contact .card {
+  margin: 0 10px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+.contact .card i {
+  font-size: 40px;
+}
+.contact .card h5 {
+  font-weight: 600;
+}
+/* END CONTACT SECTION */
+/* START FOOTER */
+footer {
+  background-color: #272829;
+}
+/* EDN FOOTER */
 /* END MAIN */
