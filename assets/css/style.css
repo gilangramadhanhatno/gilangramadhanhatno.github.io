@@ -431,4 +431,23 @@ section {
   }
 }
 /* END SKILLS SECTION */
+
+/* START PORTFOLIO SECTION */
+.portfolio .box-container {
+  overflow: hidden;
+}
+.portfolio .box-container .box {
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+}
+.portfolio .box-container img {
+  width: 400px;
+  height: 250px;
+}
+.portfolio .box-container .box:hover img {
+  transition: all 300ms ease-in-out;
+  transform: scale(1.2);
+}
+/* END PORTFOLIO SECTION */
 /* END MAIN */
